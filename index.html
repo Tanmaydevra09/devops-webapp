@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DevOps Web App | Tanmay Devra</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", Arial, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #ffffff;
+      min-height: 100vh;
+    }
+
+    header {
+      padding: 20px 40px;
+      background: rgba(0, 0, 0, 0.3);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 22px;
+      letter-spacing: 1px;
+    }
+
+    nav a {
+      color: #ffffff;
+      margin-left: 20px;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .hero h2 {
+      font-size: 40px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      max-width: 600px;
+      opacity: 0.9;
+    }
+
+    .buttons {
+      margin-top: 30px;
+    }
+
+    .buttons a {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 28px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-size: 16px;
+      transition: all 0.3s ease;
+    }
+
+    .btn-primary {
+      background-color: #00c6ff;
+      color: #000;
+    }
+
+    .btn-primary:hover {
+      background-color: #00a5d8;
+    }
+
+    .btn-secondary {
+      border: 2px solid #ffffff;
+      color: #ffffff;
+    }
+
+    .btn-secondary:hover {
+      background-color: #ffffff;
+      color: #000;
+    }
+
+    .section {
+      padding: 60px 20px;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.2);
+    }
+
+    .section h3 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .skill {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 12px 20px;
+      border-radius: 20px;
+      font-size: 14px;
+    }
+
+    footer {
+      padding: 20px;
+      text-align: center;
+      font-size: 14px;
+      background: rgba(0, 0, 0, 0.3);
+    }
+
+    footer span {
+      opacity: 0.8;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>DevOps WebApp</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#skills">Skills</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Hi, I'm Tanmay Devra 👋</h2>
+    <p>
+      Software Engineering Student passionate about DevOps, Cloud Computing,
+      CI/CD pipelines, and modern web technologies.
+    </p>
+
+    <div class="buttons">
+      <a href="#skills" class="btn-primary">View Skills</a>
+      <a href="https://github.com/Tanmaydevra09" target="_blank" class="btn-secondary">
+        GitHub Profile
+      </a>
+    </div>
+  </section>
+
+  <section class="section" id="skills">
+    <h3>Technical Skills</h3>
+    <div class="skills">
+      <div class="skill">C / C++</div>
+      <div class="skill">Python</div>
+      <div class="skill">HTML & CSS</div>
+      <div class="skill">Git & GitHub</div>
+      <div class="skill">GitHub Actions</div>
+      <div class="skill">Docker</div>
+      <div class="skill">AWS EC2 & S3</div>
+      <div class="skill">Netlify / Vercel</div>
+      <div class="skill">CI/CD Pipelines</div>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <h3>About This Project</h3>
+    <p style="max-width:700px;margin:auto;opacity:0.9;">
+      This project demonstrates a complete DevOps workflow including version control,
+      continuous integration, automated deployment, and ChatOps notifications.
+      Every code commit triggers a CI pipeline and auto-deploys the application.
+    </p>
+  </section>
+
+  <footer>
+    <span>© 2026 Tanmay Devra | DevOps Virtual Lab Project</span>
+  </footer>
+
+</body>
+</html>
+
