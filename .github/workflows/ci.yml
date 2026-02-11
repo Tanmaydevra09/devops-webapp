@@ -10,25 +10,23 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Step 1: Checkout source code
       - name: Checkout Source Code
         uses: actions/checkout@v3
 
-      # Step 2: Build project
       - name: Build Project
         run: echo "Building the web application..."
 
-      # Step 3: Run tests (optional)
       - name: Run Tests
         run: echo "No tests configured"
 
-      # Step 4: Generate logs
       - name: Generate Logs
         run: |
           echo "CI pipeline executed successfully"
           echo "Build triggered on $(date)"
 
-      # Step 5: ChatOps - Notify Microsoft Teams
       - name: Notify Microsoft Teams
         run: |
-          curl -X POST ${{ secrets.TEAMS_WEBHOOK }}
+          curl -X POST \
+          -H "Content-Type: application/json" \
+          -d '{"text":"CI pipeline executed successfully"}' \
+          ${{ secrets.TEAMS_WEBHOOK }}
